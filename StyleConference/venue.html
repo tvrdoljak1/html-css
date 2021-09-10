@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ConferenceRoom</title>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="header-content">
+            <button class="button">STYLES CONFERENCE</button>
+            <div class="nav">
+                <div class="date">
+                    <p>August24-26th - Chicago,IL</p>
+                </div>
+                <div class="navigation">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="speakers.html">SPEAKERS</a></li>
+                    <li><a href="schedule.html">SCHEDULE</a></li>
+                    <li><a href="#">VENUE</a></li>
+                    <li><a href="register.html">REGISTER</a></li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="speakers-header">
+        <h2>Speakers</h2>
+        <p>We’re happy to welcome over twenty speakers to present on the industry’s latest</p>
+        <p> technologies. Prepare for an inspiration extravaganza.</p>
+    </div>
+
+    <div class="main">
+        <div class="main-content-venue">
+            <div class="textmap">
+                <h2>Chicago Theatre</h2>
+                <p>175 N State St</p>
+                <p>Chicago, IL 60601</p>
+                <a href="">thechicagotheatre.com</a>
+                <p>(312) 462-6300</p>
+            </div>
+            
+            <div id="map">
+                
+            </div>
+        </div>
+        <div class="main-content-venue">
+            <div class="textmap">
+                <h2>Four Seasons</h2>
+                <p>120 E Delaware PI</p>
+                <p>Chicago, IL 60611</p>
+                <a href="">fourseasons.com</a>
+                <p>(312) 280-8800</p>
+            </div>
+            
+            <div id="map1">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="credit">
+                <p>© Styles Conference</p>
+            </div>
+            <div class="navigation-footer">
+                <li>Home</li>
+                <li>Speakers</li>
+                <li>Schedule</li>
+                <li>Venue</li>
+                <li>Register</li>
+            </div>
+        </div>
+    </div>
+
+    <script>  
+        function myMap() {  
+        var mapOptions = {  
+            center: new google.maps.LatLng(51.5, -0.12),  
+            zoom: 10,  
+            mapTypeId: google.maps.MapTypeId.ROADMAP 
+        }  
+        var map = new google.maps.Map(document.querySelector("#map"), mapOptions);  
+        }  
+
+        function myMap1() {  
+        var mapOptions1 = {  
+            center: new google.maps.LatLng(51.5, -0.12),  
+            zoom: 10,  
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }  
+        var map1 = new google.maps.Map(document.querySelector("#map1"), mapOptions1);  
+        } 
+
+    </script>  
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGdeKE7kvA8OLNCR15Ge_VbZEFGfO_I6w&callback=myMap"></script>  
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGdeKE7kvA8OLNCR15Ge_VbZEFGfO_I6w&callback=myMap1"></script>  
+
+</body>
+</html>
