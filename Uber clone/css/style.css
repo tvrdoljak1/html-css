@@ -1,0 +1,490 @@
+:root {
+  --lightGrey: rgb(226, 226, 226);
+  --lightlightGrey: rgb(245, 245, 245);
+  --headerWidth: 1400px;
+  --lightBlack: rgb(65, 65, 65);
+  --lightlightBlack: rgb(80, 80, 80);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-background {
+  background-color: black;
+}
+
+.header {
+  max-width: var(--headerWidth);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.header-left {
+  position: relative;
+}
+
+.header-right a {
+  padding: 12px;
+}
+
+.header-left a {
+  padding: 12px;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.header-left a:nth-of-type(1) {
+  position: absolute;
+  top: -8px;
+  left: -25px;
+  font-size: 25px;
+}
+
+.header-left a:nth-of-type(2) {
+  margin-left: 60px;
+}
+
+.icon-right {
+  margin-left: 7px;
+  font-size: 12px;
+}
+
+.icon-left {
+  margin-right: 7px;
+  font-size: 15px;
+}
+
+.header-right a:nth-of-type(4) {
+  background: white;
+  color: black;
+  border-radius: 20px;
+}
+
+.header-right a:nth-of-type(4):hover {
+  background: var(--lightGrey);
+  transition: 0.5s;
+}
+
+.image {
+  width: 100%;
+  height: 93.5vh;
+  background: url("../img/uber4.jpg") no-repeat center/cover;
+}
+
+.pad {
+  width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+}
+
+.content {
+  background-color: white;
+  width: 600px;
+}
+
+.content .image-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.content .image-footer a {
+  text-decoration: none;
+  padding: 30px 0px 30px 0px;
+  flex-grow: 1;
+  flex-basis: 0;
+  color: black;
+  border-bottom: 3px solid var(--lightGrey);
+}
+
+.content .image-footer a:hover {
+  border-bottom: 3px solid black;
+}
+
+.content .image-main {
+  text-align: left;
+  font-size: 25px;
+  padding: 60px 40px 40px 40px;
+}
+
+.content .image-main p {
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.content .image-buttons {
+  display: flex;
+  padding: 0px 40px 40px 40px;
+  position: relative;
+}
+
+.content .image-buttons button {
+  flex-grow: 1;
+  flex-basis: 0;
+  font-size: 15px;
+}
+
+.content .image-buttons button:nth-of-type(1) {
+  margin-right: 18px;
+  border: none;
+  padding: 15px;
+  background-color: black;
+  color: white;
+}
+
+.content .image-buttons button:nth-of-type(2)::after {
+  position: absolute;
+  bottom: 45px;
+  content: "";
+  display: block;
+  width: 0px;
+  height: 1px;
+  background: black;
+  transition: width 0.3s;
+}
+
+.content .image-buttons button:nth-of-type(2):hover::after {
+  width: 39%;
+}
+
+.content .image-buttons button:nth-of-type(2) {
+  background-color: white;
+  border: none;
+}
+
+.footer-icon {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.footer-i {
+  color: white;
+}
+.business-container h2,
+p {
+}
+
+.business {
+  width: 100%;
+  height: 30vh;
+  background: url("../img/sky3.jpg") no-repeat center center/cover;
+  position: relative;
+  z-index: 1;
+}
+
+.business::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(246, 246, 246, 0.8);
+  z-index: -1;
+}
+
+.business-container h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.business-container p {
+  margin-bottom: 30px;
+}
+
+.business-container button {
+  padding: 15px 20px 15px 20px;
+  font-size: 16px;
+  color: white;
+  background: black;
+  border: none;
+}
+
+.main-content {
+  background: white;
+  width: 100%;
+}
+
+.main-flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.main-flex .left {
+  width: 45%;
+}
+
+.main-flex .right {
+  width: 45%;
+}
+
+.main-flex button,
+.bottom button {
+  display: block;
+  background: white;
+  border: none;
+  font-size: 16px;
+  color: var(--lightBlack);
+  position: relative;
+}
+
+/** main button effects */
+
+.main-flex button::after,
+.bottom button::after {
+  position: absolute;
+  bottom: -5px;
+  content: "";
+  display: block;
+  width: 0px;
+  height: 1px;
+  background: black;
+  transition: width 0.3s;
+}
+
+.main-flex button:hover::after,
+.bottom button:hover::after {
+  width: 100%;
+}
+
+/** **/
+
+.left img,
+.right img {
+  width: 100%;
+}
+
+.main-content h2 {
+  padding-bottom: 60px;
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--lightBlack);
+}
+
+.main-content h4 {
+  font-size: 20px;
+  color: var(--lightBlack);
+  margin-top: 20px;
+}
+
+.main-content p {
+  color: var(--lightlightBlack);
+  margin-top: 20px;
+  line-height: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+
+.bottom h5 {
+  font-size: 20px;
+  color: var(--lightBlack);
+}
+
+.about,
+.newsroom,
+.global {
+  flex: 1 1 0px;
+}
+
+.bottomIcon {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.aplication-offer {
+  background: var(--lightlightGrey);
+  padding-bottom: 50px;
+}
+
+.aplication-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aplication-content .left {
+  background: white;
+  width: 40%;
+  flex: 1 1 0px;
+  margin-right: 15px;
+  padding: 10px;
+  border: 1px solid var(--lightGrey);
+}
+
+.aplication-content .right {
+  background: white;
+  width: 40%;
+  flex: 1 1 0px;
+  margin-left: 15px;
+  padding: 10px;
+  border: 1px solid var(--lightGrey);
+}
+
+.aplication-content img {
+  width: 25%;
+  height: 100%;
+}
+
+.aplication-content .box {
+  display: flex;
+  height: 160px;
+  padding: 8px;
+  background: white;
+}
+
+.aplication-content .box h3 {
+  align-self: center;
+  margin-left: 18px;
+}
+
+.aplication-offer h1 {
+  margin-bottom: 40px;
+  color: var(--lightBlack);
+}
+
+.registration {
+  background: white;
+  padding-bottom: 40px;
+}
+
+.registration .pad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.reg-left {
+  flex: 1 1 0px;
+  margin-right: 15px;
+  height: 160px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.reg-right {
+  flex: 1 1 0px;
+  margin-left: 15px;
+  height: 160px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.registration h2 {
+  font-weight: 100;
+}
+
+.footer {
+  margin-top: 40px;
+}
+.uber {
+  margin-bottom: 50px;
+}
+
+.uber h3 {
+  color: white;
+  font-size: 25px;
+  font-weight: 100;
+  margin-bottom: 40px;
+}
+
+.uber a {
+  color: white;
+  padding-bottom: 40px;
+  text-decoration: none;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+}
+
+.info .company {
+  width: 25%;
+}
+
+.info .products {
+  width: 25%;
+}
+
+.info .global {
+  width: 25%;
+}
+
+.info .company h4,
+.products h4,
+.global h4 {
+  color: white;
+  line-height: 3rem;
+}
+
+.info .company a,
+.products a,
+.global a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  line-height: 3rem;
+}
+
+
+.icons,
+.country,
+.appstore {
+  width: 25%;
+}
+
+.appstore {
+  margin-left: auto;
+  text-align: right;
+}
+
+.icons a,
+.country a,
+.appstore a {
+  color: white;
+  text-decoration: none;
+}
+
+.copyright p,
+a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+.copyright a {
+  float: right;
+  padding-left: 25px;
+}
+
+.copyright {
+  margin-top: 60px;
+}
