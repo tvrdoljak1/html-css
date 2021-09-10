@@ -1,0 +1,261 @@
+:root {
+  --headerBackground: rgb(46, 46, 46);
+  --iconHeader: rgb(207, 207, 207);
+  --linkColor: rgb(14, 140, 243);
+  --footerColor: rgb(245, 243, 243);
+  --footerTextColor: rgb(131, 131, 131);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: rgba(46, 46, 46, 0.96);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-content {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-content a {
+  color: var(--iconHeader);
+  text-decoration: none;
+  font-size: 15px;
+  padding: 12px 0px 12px 0px;
+}
+
+
+
+#apple-icon {
+  color: white;
+  font-size: 20px;
+  padding: 0px 10px;
+  padding: 10px 0px 12px 0px;
+  color: var(--iconHeader);
+}
+
+#search-icon {
+  color: white;
+  font-size: 20px;
+  padding: 10px 0px 12px 0px;
+  color: var(--iconHeader);
+}
+
+
+
+
+.main {
+  padding-top: 70px;
+  text-align: center;
+  line-height: 40px;
+  width: 100%;
+  height: 70vh;
+  background: url("../img/iphone_12.jpg") no-repeat center/cover;
+  background-size: 2800px;
+  margin-bottom: 10px;
+}
+
+.main h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.main p {
+  font-size: 25px;
+  color: black;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--linkColor);
+}
+
+.black {
+  background: url("../img/iphone_12_black.jpg") no-repeat center/cover;
+}
+
+.black h1,
+.black p {
+  color: white;
+}
+
+.watch {
+  background: url("../img/iwatch.jpg") no-repeat bottom;
+  background-size: 270px;
+  position: relative;
+  height: 72vh;
+}
+
+.watch::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: -1;
+}
+
+.watch * {
+  z-index: 1;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.item {
+  background-color: blue;
+  height: 600px;
+  text-align: center;
+}
+
+.item h1 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.ipad p {
+  padding-bottom: 20px;
+}
+
+.iwatch p:nth-child(3),
+.arcade p:nth-child(4) {
+  padding-bottom: 20px;
+}
+
+.arcade {
+  color: white;
+}
+
+.link-white {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.first {
+  margin-right: 5px;
+}
+.second {
+  margin-left: 5px;
+}
+
+.ipad {
+  background-color: blueviolet;
+  background: url("../img/iPad.jpg") no-repeat center/cover;
+}
+
+.airpod {
+  background: url("../img/airpods.jpg") no-repeat center/cover;
+}
+
+.iwatch {
+  background: url("../img/watches.jpg") no-repeat bottom/cover;
+  background-size: auto;
+  background-color: rgb(251, 251, 253);
+}
+
+.arcade {
+  background: url("../img/arcade.jpg") no-repeat center/cover;
+}
+
+.item p {
+  font-size: 20px;
+}
+
+.footer {
+  background-color: var(--footerColor);
+}
+
+.footer-content {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-content p {
+  padding: 15px 0px 0px 0px;
+  font-size: 13px;
+  color: var(--footerTextColor);
+}
+
+.footer-content p:nth-child(2) {
+  padding: 15px 0px 15px 0px;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-list-one,
+.footer-list-two,
+.footer-list-three,
+.footer-list-four {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 15px 0px 15px 0px;
+}
+
+.footer-list ul {
+  list-style-type: none;
+  font-size: 13px;
+  color: var(--footerTextColor);
+}
+
+.footer-list ul li {
+  padding: 5px 0px 5px 0px;
+}
+
+.footer-bottom {
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.footer-bottom a {
+  padding-top: 15px;
+  text-decoration: none;
+  font-size: 13px;
+  margin-right: 7px;
+  color: var(--footerTextColor);
+}
+
+.footer-bottom a:not(:nth-last-child(-n + 2)):after {
+  content: "|";
+  padding-left: 7px;
+  color: var(--footerTextColor);
+}
+
+.footer-bottom a:first-of-type {
+  margin-left: 15px;
+}
+
+.state {
+  margin-left: auto;
+}
+
+.footer-list ul .heading {
+  color: rgb(46, 46, 46);
+  font-weight: bold;
+}
