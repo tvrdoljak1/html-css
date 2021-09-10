@@ -1,0 +1,220 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.im{
+    width: 100px;
+    height: 80px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 3fr 2fr 4fr 2fr 2.5fr 0.8fr;
+}
+
+.a {
+  padding: 3rem;
+  
+  background: #f4f4f4;
+  font-size: 1.3rem;
+  
+  text-align: center;
+}
+
+.contact {
+  background: chartreuse;
+  width: 50%;
+}
+
+.about {
+  background: cornflowerblue;
+  width: 50%;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+}
+.header {
+  padding-top: 120px;
+  position: relative;
+  z-index: 1;
+  background: url("img/code.jpg") no-repeat center center/cover;
+}
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(56, 56, 56, 0.6);
+    z-index: -1;
+}
+
+.header h1 {
+  padding-bottom: 25px;
+  font-size: 35px;
+  color: white;
+}
+
+.paragraph {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+
+.paragraph p{
+    
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+}
+
+.header button {
+  padding: 20px 30px;
+  font-size: 1.2rem;
+  background: rgba(56, 56, 56);
+  color: white;
+  border: 1px solid grey;
+}
+
+.header button:hover {
+  background: white;
+  color: black;
+}
+
+.topic-container{
+    width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.topic h2{
+    padding-bottom: 35px;
+}
+
+.topic-left{
+    margin-right: 30px;
+    text-align: justify;
+}
+
+.topic-right{
+    margin-left: 30px;
+    text-align: justify;
+}
+
+.main{
+    background: rgba(56, 56, 56);
+}
+
+.main-container{
+    width: 860px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-left{
+    margin-right: 20px;
+    
+    background: white;
+    
+}
+
+.main-middle{
+    margin-right: 20px;
+   
+    background: white;
+}
+
+.main-right{
+    
+    background: white;
+}
+
+.main-left .im, .main-middle .im, .main-right .im{
+    width: 100%;
+    height: 40%;
+    
+}
+
+.main-left h3, .main-middle h3,.main-right h3{
+    padding-top: 30px
+    
+}
+
+.main-left p, .main-middle p,.main-right p{
+    padding: 30px 20px 0px 10px;
+}
+
+.describe .describe-main{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+
+.describe .describe-main h3{
+    
+    margin-bottom: 40px;
+}
+
+.info{
+    text-align: center;
+}
+
+.contact h3, .about h3{
+    padding-top: 78px;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.contact p, .about p{
+    padding-top: 78px;
+    margin: 0 50px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.contact{
+    background-color: rgba(2, 139, 224);
+}
+
+.about{
+    background-color: rgba(56,56,56);
+}
+
+.footer{
+    background-color: black;
+    
+}
+
+.footer p{
+    display: inline-block;
+    color: white;
+    
+}
+
+.footer .footer-left{
+    float: left;
+    width: 50%;
+}
+
+.footer .footer-right{
+    float: right;
+    width: 50%;
+}
+
+.blue{
+    color: rgba(2, 139, 224);
+}
